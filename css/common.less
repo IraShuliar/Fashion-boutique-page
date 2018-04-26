@@ -1,0 +1,231 @@
+@import 'mixins.less';
+@import 'variables.less';
+
+
+.input-error{
+	border: 1px solid #ff5454!important;
+}
+
+// .btn {
+// 	height: 60px;
+// 	font-family: @font-family;
+// 	display: inline-block;
+// 	color: @font-color-white;
+// 	background: @pink;
+// 	font-size: 26px;
+// 	font-weight: 700;
+// 	text-transform: uppercase;
+// 	line-height: 60px;
+// 	outline: none;
+// 	border: none;
+// 	padding: 0 22px;
+// 	cursor: pointer;
+// 	text-decoration: none;
+
+// 	&:hover {
+// 		background: #c9124e;
+// 	}
+// 	span {
+// 		padding-right: 30px;
+// 		position: relative;
+// 		display: inline-block;
+// 		&:after {
+// 			content: '';
+// 			display: inline-block;
+// 			width: 10px;
+// 			height: 16px;
+// 			background: url(../images/icon.png) no-repeat center;
+// 			position: absolute;
+// 			right: 0;
+// 			top: -4px;
+// 			bottom: 0;
+// 			margin: auto 0;
+// 		}
+// 	}
+// }
+
+.input {
+	box-sizing: border-box;
+	background-color: @white;
+	width: 279px;
+	height: 46px;
+	font-size: @font-size-xs;
+	font-weight: 400;
+	font-family: @font-family;
+	padding: 15px;
+	border: 1px solid @black;
+	font-variant: small-caps;
+	outline: none;
+	.placeholder(@color: #7a7a7a, @size: 15px, @fontStyle: normal, @fontWeight: 400, @fontFamily: @font-family);
+	&.field-error {
+		box-shadow: 0 0 14px #ff2e26;
+	}
+}
+.white-block {
+	background-color: @white;
+	.box-shadow;
+}
+
+
+// .block-title {
+// 	margin-top: 40px;
+// 	margin-bottom: 18px;
+// 	margin-left: 17px;
+// 	color: @black;
+// 	font-family: @font-family;
+// 	font-weight: 400;
+// 	font-size: 26px;
+// }
+
+.btn {
+		box-sizing: border-box;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		width: 226px;
+		height: 49px;
+    line-height: 49px;
+    font-size: @font-size-xs;
+		color: @white;
+		background-color: @red;   
+    text-align: center;
+		vertical-align: middle;
+		padding: 0 7px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		.transition(all, 0.2s, linear);
+		&.grey {
+			background-color: @grey;
+			color: #0b0806;
+			&:hover {
+				background-color: #4D4A4A;
+			}
+		}
+		&:hover {
+			background-color:	@red-hover;
+		}
+}
+
+.block-title {
+	color: #010101;
+	font-family: @font-family;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	text-align: center;
+	margin-bottom: 40px;
+	&.black {
+		margin-bottom: 15px;
+	}
+	&.white {
+		color: @white;
+		margin-bottom: 15px;
+	}
+}
+.subtitle {
+	color: @red;
+	// font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 64px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+.section-left, .section-right {
+	float: left;
+	width: 50%;
+}
+
+// .section-left {
+// 	width: 470px;
+// }
+// .section-right {
+// 	width: 472px;
+// }
+
+.container {
+	margin-left: 302px;
+	min-width: 1024px;
+
+	@media screen and(max-width: @desktop-breakpoint) {
+		margin-left: 0;
+	}
+}
+
+
+.js-tabs {}
+
+.js-tab {
+ display: none;
+
+ &.active {
+	display: block;
+	background-color: transparent;
+ }
+}
+
+// .slider-wrp{
+// 	margin-bottom: 95px;
+	
+// 	.slider {
+// 		.clearfix;
+
+// 		.slide {
+// 			float: left;
+// 			width: 270px;
+// 			height: 350px;
+// 			text-decoration: none;
+// 			position: relative;
+
+// 			&:after {
+// 				content: '';
+// 				opacity: 0; 		  	
+// 				background: rgba(237, 20, 91, 0.8) url(../images/icon-hover.png) no-repeat center;
+// 				.transition;
+// 				position: absolute;
+// 				top: 0;
+// 				bottom: 0;
+// 				left: 0;
+// 				right: 0;
+// 			}
+// 			&:hover:after {
+// 				opacity: 1;
+// 			}
+
+// 			img {
+// 				width: 100%;
+// 				height: 100%;
+// 			}
+// 		}
+// 	}
+// }
+
+// .slider-controls {
+// 	position: relative;
+
+// 	.prev, .next {
+// 		display: inline-block;
+// 		width: 70px;
+// 		height: 60px;
+// 		background: @pink url(../images/arrow-slider.png) no-repeat center;
+// 		position: absolute;
+// 		right: 90px;
+// 		top: -123px;
+// 		z-index: 20;
+// 	}
+
+// 	.next {
+// 		background: @pink url(../images/arrow-slider2.png) no-repeat center;
+// 		right: 0;
+// 	}
+// 	.prev:hover {
+// 		background: #c9124e url(../images/arrow-slider.png) no-repeat center;
+// 	}
+// 	.next:hover {
+// 		background: #c9124e url(../images/arrow-slider2.png) no-repeat center;
+// 	}
+// }

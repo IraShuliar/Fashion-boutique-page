@@ -1,0 +1,137 @@
+.input-error {
+  border: 1px solid #ff5454!important;
+}
+.input {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 279px;
+  height: 46px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "TextBook";
+  padding: 15px;
+  border: 1px solid #000000;
+  font-variant: small-caps;
+  outline: none;
+}
+.input::-webkit-input-placeholder {
+  color: #7a7a7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "TextBook";
+}
+.input:-moz-placeholder {
+  /* Firefox 18- */
+
+  color: #7a7a7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "TextBook";
+}
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: #7a7a7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "TextBook";
+}
+.input:-ms-input-placeholder {
+  color: #7a7a7a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "TextBook";
+}
+.input.field-error {
+  box-shadow: 0 0 14px #ff2e26;
+}
+.white-block {
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.3);
+}
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 226px;
+  height: 49px;
+  line-height: 49px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #ff2e26;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn.grey {
+  background-color: #dfdfdf;
+  color: #0b0806;
+}
+.btn.grey:hover {
+  background-color: #4D4A4A;
+}
+.btn:hover {
+  background-color: #de1c15;
+}
+.block-title {
+  color: #010101;
+  font-family: "TextBook";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.block-title.black {
+  margin-bottom: 15px;
+}
+.block-title.white {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.subtitle {
+  color: #ff2e26;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.section-left,
+.section-right {
+  float: left;
+  width: 50%;
+}
+.container {
+  margin-left: 302px;
+  min-width: 1024px;
+}
+@media screen and (max-width: 1366px) {
+  .container {
+    margin-left: 0;
+  }
+}
+.js-tab {
+  display: none;
+}
+.js-tab.active {
+  display: block;
+  background-color: transparent;
+}
